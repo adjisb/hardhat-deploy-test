@@ -1,0 +1,29 @@
+{
+    "name": "hardhat-deploy-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": " hardhat test",
+        "coverage": "hardhat coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adjisb/hardhat-deploy-test.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/adjisb/hardhat-deploy-test/issues"
+    },
+    "homepage": "https://github.com/adjisb/hardhat-deploy-test#readme",
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+        "chai": "^4.2.0",
+        "ethers": "^5.4.5",
+        "hardhat": "^2.6.1",
+        "hardhat-deploy": "^0.8.11",
+        "solidity-coverage": "^0.7.16"
+    }
+}
