@@ -1,6 +1,7 @@
 require('hardhat-deploy');
 require("@nomiclabs/hardhat-ethers");
 require('solidity-coverage');
+require('hardhat-contract-sizer');
 
 module.exports = {
     solidity: "0.8.4",
@@ -12,7 +13,10 @@ module.exports = {
     },
     namedAccounts: {
         deployer: {
-            default: 1,
+            default: 2,
+        },
+        upgradeAdmin: {
+            default: 3
         }
     }
 };

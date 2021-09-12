@@ -5,12 +5,12 @@ import "hardhat/console.sol";
 import "./BaseA.sol";
 import "./BaseB.sol";
 
-contract Greeter is BaseA, BaseB {
+contract GreeterUpgradeable2 {
     string private greeting;
+    uint256 y;
 
-    constructor(string memory _greeting) {
-        console.log("Deploying a Greeter with greeting:", _greeting);
-        greeting = _greeting;
+    function init(uint256 x) external {
+        y = x;
     }
 
     function greet() public view returns (string memory) {
