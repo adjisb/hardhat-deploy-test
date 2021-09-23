@@ -4,7 +4,7 @@
   "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.",
   "main": "index.js",
   "scripts": {
-    "test": " hardhat test",
+    "test": "hardhat test",
     "coverage": "hardhat coverage"
   },
   "repository": {
@@ -24,7 +24,7 @@
     "ethers": "^5.4.5",
     "hardhat": "^2.6.1",
     "hardhat-contract-sizer": "^2.0.3",
-    "hardhat-deploy": "^0.8.11",
+    "hardhat-deploy": "^0.9.0",
     "solidity-coverage": "^0.7.16"
   },
   "directories": {
@@ -229,6 +229,7 @@
     "handlebars": "^4.7.7",
     "har-schema": "^2.0.0",
     "har-validator": "^5.1.5",
+    "hardhat-gas-reporter": "^1.0.4",
     "has": "^1.0.3",
     "has-bigints": "^1.0.1",
     "has-flag": "^3.0.0",

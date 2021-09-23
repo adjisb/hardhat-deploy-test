@@ -1,14 +1,16 @@
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy} = deployments;
-    const {deployer} = await getNamedAccounts();
-    await deploy('Greeter', {
+    const {deployer, upgradeAdmin} = await getNamedAccounts();
+    await deploy('GreeterUpgradeable', {
         from: deployer,
-        args: ['Hello, world!'],
-        log: true,
+        proxy: {
+            owner: upgradeAdmin,
+            proxyContract: 'OpenZeppelinTransparentProxy',
+            execute: {
+                methodName: 'init',
+                args: [123],
+            },
+        },
     });
 };
-module.exports.tags = ['Greeter'];
-module.exports.skip = (hre) => {
-    console.log("--------------------> ", hre.network.tags);
-    return false;
-}
+module.exports.tags = ['GreeterUpgradeable'];

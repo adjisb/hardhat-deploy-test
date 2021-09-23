@@ -7,7 +7,7 @@ import "./BaseB.sol";
 
 contract GreeterUpgradeable {
     string private greeting;
-    uint256 y;
+    uint256 public y;
 
     function init(uint256 x) external {
         y = x;
