@@ -487,11 +487,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers":
-  version "0.3.0-beta.10"
-  resolved "https://registry.yarnpkg.com/hardhat-deploy-ethers/-/hardhat-deploy-ethers-0.3.0-beta.10.tgz#bccfcf635d380bbab3638960f6739fe4d396fc5f"
-  integrity sha512-TeyriUshRZ7XVHOjMsDtTozIrdwLf3Bw+oZRYNhXdG/eut5HeDhjUFPfRlG7TI1lSLvkcB5dt7OxOtPYKDOxTg==
-
 "@sentry/core@5.30.0":
   version "5.30.0"
   resolved "https://registry.yarnpkg.com/@sentry/core/-/core-5.30.0.tgz#6b203664f69e75106ee8b5a2fe1d717379b331f3"
@@ -2752,6 +2747,11 @@ hardhat-deploy@^0.9.0:
     match-all "^1.2.6"
     murmur-128 "^0.2.1"
     qs "^6.9.4"
+
+hardhat-ethers@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/hardhat-ethers/-/hardhat-ethers-1.0.1.tgz#3b9010fde35ba7738b5f329d320ae4b03ef0e767"
+  integrity sha512-zS7VPEwlYwIbMZG/PTDM9pF1cagmxNGxA6hLCOFQt/wYPDWgw5eUQNchi9fRbd+k6ZIgm3UypsjK60Qqlx7Ogw==
 
 hardhat-gas-reporter@^1.0.4:
   version "1.0.4"
